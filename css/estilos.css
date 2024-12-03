@@ -1,0 +1,76 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+
+.principalContacto{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* toma el espacio dependiendo el elemento h q es como una varable y esas h van a tomar las tres columanas y si hay mas filas muestra el estilo de las filas */
+    grid-template-areas: 
+    "n n n n"
+    "s s s s"
+    "a a r g"
+    "f f f f"
+    ;
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+.navContacto{
+    height: 100px;
+    grid-area: n;
+}
+
+.sectionContacto{
+    grid-area: s;
+}
+
+.articleContacto{
+    grid-area: a;
+}
+
+.asideContacto1{
+    grid-area: r;
+}
+
+.asideContacto2{
+    grid-area: g;
+}
+
+.footerContacto{
+    grid-area: f;
+}
+
+.principalLab{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* toma el espacio dependiendo el elemento h q es como una varable y esas h van a tomar las tres columanas y si hay mas filas muestra el estilo de las filas */
+    grid-template-areas: 
+    "n n n n"
+    "h h h h"
+    "a a a a"
+    "a a a a"
+    "f f t t"
+    ;
+    background-color: purple;
+    height: 100vh;
+}
+
+.navLab{
+    grid-area: n;
+    height: 100px;
+}
+
+.headerLab{
+    grid-area: h;
+}
+.artcleLab{
+    grid-area: a;
+}
+
+.footerLab1{
+    grid-area: f;
+}
+.footerLab2{
+    grid-area: t;
+}
